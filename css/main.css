@@ -25,3 +25,36 @@ img {
   display: block;
   width: 100%;
 }
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 20em) {
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .viewing {
+    grid-column: 1;
+  }
+
+  .gravel {
+    grid-column: 2;
+  }
+
+  .symbolism {
+    grid-column: 3;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+  }
+
+}
